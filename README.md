@@ -19,11 +19,9 @@ I care about clean model training infrastructure, good loss function design, and
 
 Fine-tuned YOLOv8m to detect licence plates in images and video. Converted Open Images bounding-box annotations to YOLO format, evaluated with COCO mAP metrics, and ran real-time inference at **22 FPS** on video.
 
-[![Demo Video](https://drive.google.com/thumbnail?id=1PrPcetnouRWICAvt0DTOaQFUyoGYKY2D&sz=w800)](https://drive.google.com/file/d/1PrPcetnouRWICAvt0DTOaQFUyoGYKY2D/view?usp=drive_link)
 
-> 🎬 Click to watch inference video · [click here](https://github.com/523vishwanath/vehicle-registration-plate-detection)
 
-![Inference Demo Gif](github-profile/assets/demo.gif)
+![Inference Demo](github-profile/assets/demo.gif)
 
 ---
 
