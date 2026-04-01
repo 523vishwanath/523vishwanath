@@ -21,7 +21,7 @@ Fine-tuned YOLOv8m to detect licence plates in images and video. Converted Open 
 
 
 
-![Inference Demo](github-profile/assets/demo.gif)
+
 
 ---
 
@@ -42,6 +42,8 @@ Fine-tuned SegFormer-B3 on retinal fundus images. Designed a **Dice + Cross-Entr
 Built an end-to-end detection system for tiny traffic lights (Red / Yellow / Green / Wait-On) in high-resolution images. Used tile-based fine-tuning and SAHI sliced inference to handle small objects.
 
 **Result: mAP50-95 improved from 42 → 55 · mAP50: 80 · 22 FPS on video**
+
+![Inference Demo](github-profile/assets/demo.gif)
 
 ---
 
