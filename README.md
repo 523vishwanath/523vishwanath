@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="assets/banner.svg" alt="Vishwanath Reddy Ninganolla – Computer Vision Engineer" width="100%"/>
+  <img src="github-profile/assets" alt="Vishwanath Reddy Ninganolla – Computer Vision Engineer" width="100%"/>
 </div>
 
 ---
