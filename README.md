@@ -32,6 +32,8 @@ Fine-tuned SegFormer-B3 on retinal fundus images. Designed a **Dice + Cross-Entr
 
 **Result: 78.02% mIoU** across thin and thick vessel structures.
 
+![Retinal Blood Vessel Segmentation](github-profile/assets/icprInference.png)
+
 ---
 
 ### 🚦 Small Traffic Light Detection
