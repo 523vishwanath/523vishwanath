@@ -87,17 +87,6 @@ Multi-class semantic segmentation (12 classes) on drone aerial imagery. Trained 
 
 `Mixed Precision (AMP)` · `SAHI Slicing Inference` · `Dice + CE Loss` · `Data Augmentation Pipelines` · `mIoU / mAP50-95 Evaluation`
 
----
-
-## 📊 GitHub Stats
-
-<div align="center">
-
-![Vishwanath's GitHub Stats](https://github-readme-stats.vercel.app/api?username=523vishwanath&show_icons=true&theme=github_dark&hide_border=true&bg_color=0d1117&title_color=58a6ff&text_color=8b949e&icon_color=3fb950)
-
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=523vishwanath&layout=compact&theme=github_dark&hide_border=true&bg_color=0d1117&title_color=58a6ff&text_color=8b949e)
-
-</div>
 
 ---
 
