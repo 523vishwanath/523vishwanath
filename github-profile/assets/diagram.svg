@@ -1,0 +1,217 @@
+<svg fill="none" viewBox="0 0 1200 620" height="620" width="1200" xmlns="http://www.w3.org/2000/svg">
+  
+  <defs>
+    <linearGradient y2="100%" x2="0%" y1="0%" x1="0%" id="bgGradient">
+      <stop stop-color="#0A0F2C" offset="0%"></stop>
+      <stop stop-color="#1A233F" offset="100%"></stop>
+    </linearGradient>
+    
+    
+    <linearGradient y2="0%" x2="100%" y1="0%" x1="0%" id="tealGradient">
+      <stop stop-color="#00E5C8" offset="0%"></stop>
+      <stop stop-color="#00B8A0" offset="100%"></stop>
+    </linearGradient>
+    
+    
+    <linearGradient gradientUnits="objectBoundingBox" y2="100%" x2="0%" y1="0%" x1="0%" id="roadMaskGradient">
+      <stop stop-opacity="0.20" stop-color="#00E5C8" offset="0%"></stop>
+      <stop stop-opacity="0.10" stop-color="#00B8A0" offset="100%"></stop>
+    </linearGradient>
+    
+    
+    <linearGradient gradientUnits="objectBoundingBox" y2="100%" x2="0%" y1="0%" x1="0%" id="scanGradient">
+      <stop stop-opacity="0" stop-color="#00E5C8" offset="0%"></stop>
+      <stop stop-opacity="0.85" stop-color="#00E5C8" offset="45%"></stop>
+      <stop stop-opacity="0.85" stop-color="#00E5C8" offset="55%"></stop>
+      <stop stop-opacity="0" stop-color="#00E5C8" offset="100%"></stop>
+    </linearGradient>
+    
+    
+    <filter height="160%" width="160%" y="-30%" x="-30%" id="softGlow">
+      <feGaussianBlur result="coloredBlur" stdDeviation="2"></feGaussianBlur>
+      <feMerge>
+        <feMergeNode in="coloredBlur"></feMergeNode>
+        <feMergeNode in="SourceGraphic"></feMergeNode>
+      </feMerge>
+    </filter>
+    
+    <style>
+      @keyframes pulse {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0.88; }
+      }
+      .title { animation: pulse 4s ease-in-out infinite; }
+      
+      @keyframes scanMove {
+        0% { transform: translateY(-620px); }
+        100% { transform: translateY(620px); }
+      }
+      .scan-line { animation: scanMove 3.4s linear infinite; }
+      
+      @keyframes carMoveDown1 {
+        0% { transform: translateY(-180px); }
+        100% { transform: translateY(520px); }
+      }
+      .car1 { animation: carMoveDown1 4.5s linear infinite; }
+      
+      @keyframes carMoveDown2 {
+        0% { transform: translateY(-240px); }
+        100% { transform: translateY(480px); }
+      }
+      .car2 { animation: carMoveDown2 5.8s linear infinite; }
+      
+      @keyframes carMoveDown3 {
+        0% { transform: translateY(-160px); }
+        100% { transform: translateY(550px); }
+      }
+      .car3 { animation: carMoveDown3 6.8s linear infinite; }
+      
+      @keyframes maskPulse {
+        0%, 100% { opacity: 0.20; }
+        50% { opacity: 0.36; }
+      }
+    </style>
+  </defs>
+
+  
+  <rect fill="url(#bgGradient)" ry="28" rx="28" height="620" width="1200"></rect>
+  <rect opacity="0.18" stroke-width="4" stroke="#00E5C8" ry="24" rx="24" height="604" width="1184" y="8" x="8"></rect>
+
+  
+  <rect opacity="0.92" fill="#121A33" rx="20" height="434" width="418" y="108" x="82"></rect>
+  
+  
+  <rect opacity="0.20" fill="url(#roadMaskGradient)" rx="20" height="434" width="418" y="108" x="82">
+    
+  </rect>
+  
+  
+  <g>
+    <line opacity="0.88" stroke-dasharray="38,24" stroke-width="5" stroke="#E5C77F" y2="528" x2="182" y1="118" x1="182"></line>
+    <line opacity="0.88" stroke-dasharray="38,24" stroke-width="5" stroke="#E5C77F" y2="528" x2="282" y1="118" x1="282"></line>
+    <line opacity="0.88" stroke-dasharray="38,24" stroke-width="5" stroke="#E5C77F" y2="528" x2="382" y1="118" x1="382"></line>
+    
+  </g>
+
+  
+  <g class="car1">
+    <rect filter="url(#softGlow)" stroke-width="6" stroke="#00E5C8" fill="#0F1729" ry="13" rx="9" height="94" width="50" y="218" x="112"></rect>
+    <rect fill="#1E2A4A" rx="6" height="48" width="34" y="234" x="120"></rect>
+    <polygon fill="#E5C77F" points="128,223 138,210 148,223"></polygon>
+    
+    
+    <rect opacity="0.20" fill="#FF9F4C" rx="11" height="126" width="72" y="203" x="102">
+      
+    </rect>
+    
+    <rect opacity="0.88" stroke-dasharray="15,9" stroke-width="4" stroke="#00E5C8" fill="none" rx="11" height="126" width="72" y="203" x="102"></rect>
+    
+    <text font-weight="700" fill="#E5C77F" font-size="13.5" font-family="Arial Black, sans-serif" y="196" x="109">VEHICLE</text>
+  </g>
+
+  
+  <g class="car2">
+    <rect filter="url(#softGlow)" stroke-width="6" stroke="#00E5C8" fill="#0F1729" ry="14" rx="10" height="100" width="56" y="168" x="212"></rect>
+    <rect fill="#1E2A4A" rx="6" height="52" width="40" y="184" x="220"></rect>
+    <polygon fill="#E5C77F" points="229,163 239,148 249,163"></polygon>
+    
+    <rect opacity="0.20" fill="#FF9F4C" rx="11" height="132" width="78" y="153" x="202">
+      
+    </rect>
+    
+    <rect opacity="0.88" stroke-dasharray="15,9" stroke-width="4" stroke="#00E5C8" fill="none" rx="11" height="132" width="78" y="153" x="202"></rect>
+    
+    <text font-weight="700" fill="#E5C77F" font-size="13.5" font-family="Arial Black, sans-serif" y="146" x="209">VEHICLE</text>
+  </g>
+
+  
+  <g class="car3">
+    <rect filter="url(#softGlow)" stroke-width="6" stroke="#00E5C8" fill="#0F1729" ry="12" rx="9" height="90" width="48" y="258" x="312"></rect>
+    <rect fill="#1E2A4A" rx="6" height="46" width="34" y="273" x="319"></rect>
+    <polygon fill="#E5C77F" points="327,253 337,238 347,253"></polygon>
+    
+    <rect opacity="0.20" fill="#FF9F4C" rx="11" height="120" width="68" y="243" x="302">
+      
+    </rect>
+    
+    <rect opacity="0.88" stroke-dasharray="15,9" stroke-width="4" stroke="#00E5C8" fill="none" rx="11" height="120" width="68" y="243" x="302"></rect>
+    
+    <text font-weight="700" fill="#E5C77F" font-size="13.5" font-family="Arial Black, sans-serif" y="236" x="309">VEHICLE</text>
+  </g>
+
+  
+  <rect opacity="0.88" class="scan-line" fill="url(#scanGradient)" height="6" width="418" y="108" x="82"></rect>
+
+  
+  <text opacity="0.92" fill="#00E5C8" font-size="18" font-family="Arial Black, sans-serif" y="94" x="105">ROAD</text>
+  <rect opacity="0.28" fill="#00E5C8" rx="3" height="19" width="19" y="81" x="172"></rect>
+  
+  <text opacity="0.92" fill="#E5C77F" font-size="18" font-family="Arial Black, sans-serif" y="94" x="235">LANE</text>
+  <rect opacity="0.85" fill="#E5C77F" rx="3" height="19" width="19" y="81" x="294"></rect>
+  
+  <text opacity="0.92" fill="#FF9F4C" font-size="18" font-family="Arial Black, sans-serif" y="94" x="362">VEHICLE</text>
+  <rect opacity="0.32" fill="#FF9F4C" rx="3" height="19" width="19" y="81" x="428"></rect>
+
+  
+  <text opacity="0.82" fill="#00E5C8" font-size="15.5" font-family="Arial Black, sans-serif" y="72" x="105">SegFormer</text>
+  <text opacity="0.82" fill="#00E5C8" font-size="15.5" font-family="Arial Black, sans-serif" y="72" x="235">DeepLabV3</text>
+
+  
+  <text letter-spacing="-2" fill="#F5F5F5" font-weight="900" font-size="48" font-family="Arial Black, sans-serif" y="85" x="580">VISHWANATH REDDY</text>
+  <text letter-spacing="-2" fill="#F5F5F5" font-weight="900" font-size="48" font-family="Arial Black, sans-serif" y="130" x="580">NINGANOLLA</text>
+  
+  <text class="title" fill="#00E5C8" font-size="28" font-family="Helvetica, sans-serif" y="175" x="580">AUTONOMOUS PERCEPTION ENGINEER</text>
+  <text fill="#B8C5E0" font-size="19" font-family="Helvetica, sans-serif" y="205" x="580">Semantic Segmentation • Object Detection • Computer Vision</text>
+
+  <line opacity="0.32" stroke-width="2" stroke="#00E5C8" y2="230" x2="1150" y1="230" x1="580"></line>
+
+  <text fill="#00E5C8" font-size="21" font-family="Arial Black, sans-serif" y="265" x="580">KEY ACHIEVEMENTS</text>
+  
+  <text fill="#E8E8E8" font-size="17" font-family="Helvetica, sans-serif" y="295" x="590">• 78.02% mIoU Retinal Vessel Segmentation (SegFormer-B3)</text>
+  <text fill="#E8E8E8" font-size="17" font-family="Helvetica, sans-serif" y="320" x="590">• Small Traffic Light Detection: mAP50-95 42→55 (YOLOv8x + SAHI)</text>
+  <text fill="#E8E8E8" font-size="17" font-family="Helvetica, sans-serif" y="345" x="590">• Drone Semantic Segmentation: 0.57 mIoU (DeepLabV3)</text>
+  <text fill="#E8E8E8" font-size="17" font-family="Helvetica, sans-serif" y="370" x="590">• MS Information Technology, Florida State University — CGPA 3.9 (May 2026)</text>
+
+  <text fill="#00E5C8" font-size="21" font-family="Arial Black, sans-serif" y="410" x="580">SKILLS</text>
+  
+  
+  <rect stroke-width="2.5" stroke="#00E5C8" fill="#1A233F" height="35" width="112" ry="20" rx="20" y="425" x="590"></rect>
+  <text fill="#F5F5F5" font-size="15" font-family="Helvetica, sans-serif" y="447" x="606">PyTorch</text>
+  
+  <rect stroke-width="2.5" stroke="#00E5C8" fill="#1A233F" height="35" width="168" ry="20" rx="20" y="425" x="715"></rect>
+  <text fill="#F5F5F5" font-size="15" font-family="Helvetica, sans-serif" y="447" x="732">Hugging Face Transformers</text>
+  
+  <rect stroke-width="2.5" stroke="#00E5C8" fill="#1A233F" height="35" width="90" ry="20" rx="20" y="425" x="897"></rect>
+  <text fill="#F5F5F5" font-size="15" font-family="Helvetica, sans-serif" y="447" x="913">YOLOv8x</text>
+  
+  <rect stroke-width="2.5" stroke="#00E5C8" fill="#1A233F" height="35" width="106" ry="20" rx="20" y="470" x="590"></rect>
+  <text fill="#F5F5F5" font-size="15" font-family="Helvetica, sans-serif" y="492" x="606">SegFormer</text>
+  
+  <rect stroke-width="2.5" stroke="#00E5C8" fill="#1A233F" height="35" width="66" ry="20" rx="20" y="470" x="710"></rect>
+  <text fill="#F5F5F5" font-size="15" font-family="Helvetica, sans-serif" y="492" x="726">ViT</text>
+  
+  <rect stroke-width="2.5" stroke="#00E5C8" fill="#1A233F" height="35" width="79" ry="20" rx="20" y="470" x="789"></rect>
+  <text fill="#F5F5F5" font-size="15" font-family="Helvetica, sans-serif" y="492" x="806">DETR</text>
+  
+  <rect stroke-width="2.5" stroke="#00E5C8" fill="#1A233F" height="35" width="106" ry="20" rx="20" y="470" x="881"></rect>
+  <text fill="#F5F5F5" font-size="15" font-family="Helvetica, sans-serif" y="492" x="898">DeepLabV3</text>
+  
+  <rect stroke-width="2.5" stroke="#00E5C8" fill="#1A233F" height="35" width="168" ry="20" rx="20" y="515" x="590"></rect>
+  <text fill="#F5F5F5" font-size="15" font-family="Helvetica, sans-serif" y="537" x="606">Mixed Precision (AMP)</text>
+  
+  <rect stroke-width="2.5" stroke="#00E5C8" fill="#1A233F" height="35" width="69" ry="20" rx="20" y="515" x="771"></rect>
+  <text fill="#F5F5F5" font-size="15" font-family="Helvetica, sans-serif" y="537" x="788">SAHI</text>
+  
+  <rect stroke-width="2.5" stroke="#00E5C8" fill="#1A233F" height="35" width="127" ry="20" rx="20" y="515" x="853"></rect>
+  <text fill="#F5F5F5" font-size="15" font-family="Helvetica, sans-serif" y="537" x="870">NVIDIA A100</text>
+
+  
+  <rect opacity="0.25" fill="#00E5C8" height="2" width="620" y="565" x="580"></rect>
+  
+  <text fill="#B8C5E0" font-size="15" font-family="Helvetica, sans-serif" y="595" x="590">vninganolla@gmail.com  |  +1 448-200-7446  |  Tallahassee, FL</text>
+  <text fill="#B8C5E0" font-size="15" font-family="Helvetica, sans-serif" y="615" x="590">linkedin.com/in/vishwanath  |  github.com/523vishwanath</text>
+
+  
+  <text opacity="0.92" fill="#00E5C8" font-style="italic" font-size="15.5" font-family="Georgia, serif" y="585" x="580">"High-precision semantic segmentation &amp; perception systems for autonomous driving"</text>
+
+</svg>
