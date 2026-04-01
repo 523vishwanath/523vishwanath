@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="github-profile/assets" alt="Vishwanath Reddy Ninganolla – Computer Vision Engineer" width="100%"/>
+  <img src="github-profile/assets/banner.svg" alt="Vishwanath Reddy Ninganolla – Computer Vision Engineer" width="100%"/>
 </div>
 
 ---
@@ -23,7 +23,7 @@ Fine-tuned YOLOv8m to detect licence plates in images and video. Converted Open 
 
 > 🎬 Click to watch inference video · [click here](https://github.com/523vishwanath/vehicle-registration-plate-detection)
 
-![Inference Demo Gif](assets/demo.gif)
+![Inference Demo Gif](github-profile/assets/demo.gif)
 
 ---
 
