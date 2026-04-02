@@ -1,0 +1,119 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="200" viewBox="0 0 800 200">
+  <defs>
+    <style>
+      .bg { fill: #0a0f1a; }
+      .grid { stroke: #1e293b; stroke-width: 1; opacity: 0.4; }
+      
+      /* Typography */
+      .text-name { font-family: 'Courier New', monospace; font-size: 24px; font-weight: bold; fill: #e2e8f0; letter-spacing: 1px; }
+      .text-role { font-family: 'Courier New', monospace; font-size: 14px; fill: #10b981; }
+      .text-edu { font-family: 'Courier New', monospace; font-size: 13px; fill: #38bdf8; }
+      .text-stack { font-family: 'Courier New', monospace; font-size: 12px; fill: #94a3b8; }
+      .text-sys { font-family: monospace; font-size: 11px; fill: #64748b; }
+      .text-label { font-family: monospace; font-size: 10px; font-weight: bold; }
+      
+      /* Shapes & Trackers */
+      .scanner { stroke: #10b981; stroke-width: 2; opacity: 0.8; }
+      .bbox-green { fill: rgba(16, 185, 129, 0.08); stroke: #10b981; stroke-width: 1.5; stroke-dasharray: 4; }
+      .bbox-blue { fill: rgba(56, 189, 248, 0.08); stroke: #38bdf8; stroke-width: 1.5; stroke-dasharray: 4; }
+      .target-bracket { stroke: #e2e8f0; stroke-width: 1.5; fill: none; opacity: 0.7; }
+      
+      /* Animations */
+      @keyframes scan {
+        0% { transform: translateX(-150px); opacity: 0; }
+        10% { opacity: 1; }
+        90% { opacity: 1; }
+        100% { transform: translateX(850px); opacity: 0; }
+      }
+      .scan-line { animation: scan 3.5s linear infinite; }
+      
+      @keyframes blink {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0.2; }
+      }
+      .blink { animation: blink 1.5s infinite; }
+      
+      @keyframes lock-on-1 {
+        0% { transform: scale(1.1) translate(0,0); opacity: 0; }
+        15% { transform: scale(1) translate(0,0); opacity: 1; }
+        85% { transform: scale(1) translate(-10px, 5px); opacity: 1; }
+        100% { transform: scale(0.9) translate(-10px, 5px); opacity: 0; }
+      }
+      .box1 { animation: lock-on-1 6s infinite; transform-origin: center; }
+      
+      @keyframes lock-on-2 {
+        0% { transform: scale(1.2); opacity: 0; }
+        20% { transform: scale(1); opacity: 1; }
+        80% { transform: scale(1); opacity: 1; }
+        100% { transform: scale(0.8); opacity: 0; }
+      }
+      .box2 { animation: lock-on-2 5s infinite 2.5s; transform-origin: center; }
+      
+      /* Subtle camera drift */
+      @keyframes drift {
+        0% { transform: translate(0, 0); }
+        50% { transform: translate(15px, -10px); }
+        100% { transform: translate(0, 0); }
+      }
+      .camera-drift { animation: drift 12s ease-in-out infinite; }
+    </style>
+    
+    <linearGradient id="scanGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+       <stop offset="0%" stop-color="#10b981" stop-opacity="0"/>
+       <stop offset="100%" stop-color="#10b981" stop-opacity="0.3"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="100%" height="100%" class="bg" rx="6" />
+  
+  <pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse">
+    <path d="M 30 0 L 0 0 0 30" fill="none" class="grid"/>
+  </pattern>
+  <rect width="100%" height="100%" fill="url(#grid)" />
+
+  <g class="camera-drift">
+     
+     <g class="box1" transform="translate(480, 30)">
+        <rect x="0" y="0" width="140" height="90" class="bbox-green"/>
+        <rect x="0" y="-16" width="95" height="16" fill="#10b981"/>
+        <text x="4" y="-4" class="text-label" fill="#0a0f1a">vehicle 0.94</text>
+        
+        <path d="M -8 -8 L 12 -8 M -8 -8 L -8 12" class="target-bracket"/>
+        <path d="M 148 -8 L 128 -8 M 148 -8 L 148 12" class="target-bracket"/>
+        <path d="M -8 98 L 12 98 M -8 98 L -8 78" class="target-bracket"/>
+        <path d="M 148 98 L 128 98 M 148 98 L 148 78" class="target-bracket"/>
+     </g>
+     
+     <g class="box2" transform="translate(660, 110)">
+        <rect x="0" y="0" width="50" height="50" class="bbox-blue"/>
+        <rect x="0" y="-16" width="135" height="16" fill="#38bdf8"/>
+        <text x="4" y="-4" class="text-label" fill="#0a0f1a">traffic_light_red 0.88</text>
+     </g>
+
+     <g stroke="#64748b" stroke-width="1" opacity="0.5" transform="translate(600, 100)">
+        <circle cx="0" cy="0" r="40" fill="none" stroke-dasharray="2 4"/>
+        <line x1="-50" y1="0" x2="50" y2="0"/>
+        <line x1="0" y1="-50" x2="0" y2="50"/>
+     </g>
+  </g>
+
+  <g class="scan-line">
+    <rect x="-120" y="0" width="120" height="200" fill="url(#scanGrad)"/>
+    <line x1="0" y1="0" x2="0" y2="200" class="scanner"/>
+  </g>
+
+  <g transform="translate(40, 60)">
+     <text x="0" y="0" class="text-name">VISHWANATH REDDY NINGANOLLA</text>
+     <text x="0" y="26" class="text-role">> COMPUTER VISION / AUTONOMOUS PERCEPTION</text>
+     <text x="0" y="48" class="text-edu">> MSIT @ FLORIDA STATE UNIVERSITY</text>
+     <text x="0" y="72" class="text-stack">> STACK: PyTorch | YOLOv8 | OpenCV | SegFormer | SAHI</text>
+     <text x="0" y="105" class="text-sys blink">SYSTEM STATUS: ACTIVELY TRACKING... [A100 OPTIMIZED]</text>
+  </g>
+  
+  <rect x="20" y="20" width="16" height="16" fill="none" stroke="#475569" stroke-width="2"/>
+  <circle cx="28" cy="28" r="4" fill="#ef4444" class="blink"/>
+  <text x="45" y="32" class="text-sys">REC</text>
+
+  <text x="40" y="180" class="text-sys">RES: 1080p | INFERENCE: 22FPS | ARCH: TRANSFORMERS &amp; CNNS</text>
+  <text x="680" y="180" class="text-sys">mAP50-95: 55</text>
+</svg>
