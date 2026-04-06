@@ -6,21 +6,23 @@
 
 ## 👋 About Me
 
-I'm a **Computer Vision Engineer** currently pursuing my MS in Information Technology at **Florida State University** (GPA: 3.9), graduating May 2026. I build deep learning pipelines that actually work — from retinal vessel segmentation to real-time licence plate detection at 22 FPS. Previously a software engineer at HCL Tech with 2+ years building scalable data pipelines and dashboards for enterprise systems.
+**Computer Vision Engineer** and MSIT candidate at **Florida State University** (GPA: 3.9, May 2026), focused on building real-world autonomous perception systems.
 
-I care about clean model training infrastructure, good loss function design, and shipping things that run efficiently on GPU.
+I design end-to-end deep learning pipelines across detection and segmentation — from retinal vessel segmentation (78.02% mIoU) to real-time traffic light state recognition (~22 FPS, mAP50: 80). Currently building a BDD100K-based perception stack combining detection, segmentation, and tracking, with ONNX/TensorRT optimization for low-latency inference.
 
+Previously at HCLTech, building scalable data pipelines. Now focused on shipping fast, reliable CV systems — and actively seeking roles in autonomous driving / perception.
 ---
 
 ## 🔬 Featured Projects
 
-### 🚗 Vehicle Registration Plate Detection
-> YOLOv8m · Open Images Dataset · 5308 train / 386 val images
+### 🚦 Real-Time Traffic Signal State Recognition (Red, Yellow, Green) with YOLOv8
+> YOLOv8x · SAHI Slicing Inference · NVIDIA A100
 
-Fine-tuned YOLOv8m to detect licence plates in images and video. Converted Open Images bounding-box annotations to YOLO format, evaluated with COCO mAP metrics, and ran real-time inference at **22 FPS** on video.
+Built an end-to-end detection system for tiny traffic lights (Red / Yellow / Green / Wait-On) in high-resolution images. Used tile-based fine-tuning and SAHI sliced inference to handle small objects.
 
+**Result: mAP50-95 improved from 42 → 55 · mAP50: 80 · 22 FPS on video**
 
-![Inference Demo](github-profile/assets/RegPlate.gif)
+![Inference Demo](github-profile/assets/demo.gif)
 
 
 ---
@@ -36,14 +38,14 @@ Fine-tuned SegFormer-B3 on retinal fundus images. Designed a **Dice + Cross-Entr
 
 ---
 
-### 🚦 Real-Time Traffic Signal State Recognition (Red, Yellow, Green) with YOLOv8
-> YOLOv8x · SAHI Slicing Inference · NVIDIA A100
+### 🚗 Vehicle Registration Plate Detection
+> YOLOv8m · Open Images Dataset · 5308 train / 386 val images
 
-Built an end-to-end detection system for tiny traffic lights (Red / Yellow / Green / Wait-On) in high-resolution images. Used tile-based fine-tuning and SAHI sliced inference to handle small objects.
+Fine-tuned YOLOv8m to detect licence plates in images and video. Converted Open Images bounding-box annotations to YOLO format, evaluated with COCO mAP metrics, and ran real-time inference at **22 FPS** on video.
 
-**Result: mAP50-95 improved from 42 → 55 · mAP50: 80 · 22 FPS on video**
 
-![Inference Demo](github-profile/assets/demo.gif)
+![Inference Demo](github-profile/assets/RegPlate.gif)
+
 
 ---
 
