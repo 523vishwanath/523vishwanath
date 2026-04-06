@@ -36,7 +36,7 @@ Fine-tuned SegFormer-B3 on retinal fundus images. Designed a **Dice + Cross-Entr
 
 ---
 
-### 🚦 Small Traffic Light Detection
+### 🚦 Real-Time Traffic Signal State Recognition (Red, Yellow, Green) with YOLOv8
 > YOLOv8x · SAHI Slicing Inference · NVIDIA A100
 
 Built an end-to-end detection system for tiny traffic lights (Red / Yellow / Green / Wait-On) in high-resolution images. Used tile-based fine-tuning and SAHI sliced inference to handle small objects.
