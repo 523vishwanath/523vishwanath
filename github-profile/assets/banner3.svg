@@ -1,0 +1,98 @@
+<svg width="100%" viewBox="0 0 680 220" xmlns="http://www.w3.org/2000/svg">
+<defs>
+  <style>
+    @keyframes scan { 0%{transform:translateX(-200px)} 100%{transform:translateX(700px)} }
+    @keyframes blink { 0%,100%{opacity:1} 50%{opacity:0.2} }
+    @keyframes appear { from{opacity:0;transform:translateY(8px)} to{opacity:1;transform:translateY(0)} }
+    @keyframes drawbox { from{stroke-dashoffset:400} to{stroke-dashoffset:0} }
+    @keyframes floatin { from{opacity:0;transform:translateY(-6px)} to{opacity:1;transform:translateY(0)} }
+    @keyframes pulse { 0%,100%{r:3} 50%{r:5} }
+    .name { animation: appear 0.7s ease forwards; opacity:0; }
+    .role { animation: appear 0.9s 0.3s ease forwards; opacity:0; }
+    .tagline { animation: appear 0.9s 0.6s ease forwards; opacity:0; }
+    .bbox { stroke-dasharray:400; animation: drawbox 1.2s 0.4s ease forwards; stroke-dashoffset:400; }
+    .scan-line { animation: scan 3s 1s linear infinite; }
+    .dot1 { animation: pulse 2s 0s ease-in-out infinite; }
+    .dot2 { animation: pulse 2s 0.4s ease-in-out infinite; }
+    .dot3 { animation: pulse 2s 0.8s ease-in-out infinite; }
+    .pill { animation: floatin 0.7s 1s ease forwards; opacity:0; }
+    .pill2 { animation: floatin 0.7s 1.2s ease forwards; opacity:0; }
+    .pill3 { animation: floatin 0.7s 1.4s ease forwards; opacity:0; }
+    .pill4 { animation: floatin 0.7s 1.6s ease forwards; opacity:0; }
+  </style>
+  <linearGradient id="scangrad" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0%" stop-color="#58a6ff" stop-opacity="0"/>
+    <stop offset="50%" stop-color="#58a6ff" stop-opacity="1"/>
+    <stop offset="100%" stop-color="#58a6ff" stop-opacity="0"/>
+  </linearGradient>
+</defs>
+
+<rect x="0" y="0" width="680" height="220" fill="#0d1117"/>
+
+<!-- Grid lines -->
+<g opacity="0.06" stroke="#7ee787" stroke-width="0.5">
+  <line x1="0" y1="40" x2="680" y2="40"/><line x1="0" y1="80" x2="680" y2="80"/>
+  <line x1="0" y1="120" x2="680" y2="120"/><line x1="0" y1="160" x2="680" y2="160"/>
+  <line x1="0" y1="200" x2="680" y2="200"/><line x1="120" y1="0" x2="120" y2="220"/>
+  <line x1="240" y1="0" x2="240" y2="220"/><line x1="360" y1="0" x2="360" y2="220"/>
+  <line x1="480" y1="0" x2="480" y2="220"/><line x1="600" y1="0" x2="600" y2="220"/>
+</g>
+
+<rect class="scan-line" x="0" y="0" width="40" height="220" fill="url(#scangrad)" opacity="0.12"/>
+
+<!-- Detection boxes -->
+<g opacity="0.85">
+  <rect class="bbox" x="22" y="58" width="88" height="38" rx="2" fill="none" stroke="#3fb950" stroke-width="1.5"/>
+  <rect x="22" y="48" width="72" height="14" rx="2" fill="#3fb950" opacity="0.9"/>
+  <text x="26" y="59" font-family="monospace" font-size="9" fill="#0d1117" font-weight="bold">PLATE 0.97</text>
+  <text x="26" y="80" font-family="monospace" font-size="8" fill="#3fb950" opacity="0.7">ABC 1234</text>
+  <circle class="dot1" cx="110" cy="62" r="3" fill="#3fb950"/>
+</g>
+<g opacity="0.6">
+  <rect class="bbox" x="22" y="120" width="68" height="30" rx="2" fill="none" stroke="#58a6ff" stroke-width="1"/>
+  <rect x="22" y="112" width="56" height="12" rx="2" fill="#58a6ff" opacity="0.85"/>
+  <text x="26" y="121" font-family="monospace" font-size="8" fill="#0d1117" font-weight="bold">PLATE 0.89</text>
+  <circle class="dot2" cx="90" cy="124" r="3" fill="#58a6ff"/>
+</g>
+<g opacity="0.4">
+  <rect class="bbox" x="22" y="172" width="55" height="24" rx="2" fill="none" stroke="#f78166" stroke-width="1"/>
+  <circle class="dot3" cx="77" cy="176" r="3" fill="#f78166"/>
+</g>
+
+<line x1="130" y1="20" x2="130" y2="200" stroke="#30363d" stroke-width="1"/>
+
+<!-- Name & role -->
+<text class="name" x="152" y="72" font-family="'Courier New', monospace" font-size="26" font-weight="bold" fill="#e6edf3" letter-spacing="0.5">VISHWANATH REDDY</text>
+<text class="name" x="152" y="100" font-family="'Courier New', monospace" font-size="26" font-weight="bold" fill="#e6edf3" letter-spacing="0.5">NINGANOLLA</text>
+<text class="role" x="154" y="126" font-family="monospace" font-size="13" fill="#58a6ff" letter-spacing="2">COMPUTER VISION ENGINEER</text>
+<text class="tagline" x="154" y="148" font-family="monospace" font-size="10" fill="#8b949e">MS Information Technology · Florida State University · GPA 3.9</text>
+
+<!-- Skill pills -->
+<g class="pill"><rect x="154" y="162" width="68" height="20" rx="10" fill="#1f3a25"/><text x="188" y="175" font-family="monospace" font-size="9" fill="#3fb950" text-anchor="middle">YOLOv8</text></g>
+<g class="pill2"><rect x="228" y="162" width="72" height="20" rx="10" fill="#0d2035"/><text x="264" y="175" font-family="monospace" font-size="9" fill="#58a6ff" text-anchor="middle">PyTorch</text></g>
+<g class="pill3"><rect x="306" y="162" width="82" height="20" rx="10" fill="#2d1b2e"/><text x="347" y="175" font-family="monospace" font-size="9" fill="#d2a8ff" text-anchor="middle">SegFormer</text></g>
+<g class="pill4"><rect x="394" y="162" width="68" height="20" rx="10" fill="#2d1818"/><text x="428" y="175" font-family="monospace" font-size="9" fill="#f78166" text-anchor="middle">A100 GPU</text></g>
+
+<!-- Stats -->
+<g opacity="0.9">
+  <rect x="154" y="186" width="90" height="22" rx="4" fill="#161b22" stroke="#30363d" stroke-width="0.5"/>
+  <text x="162" y="200" font-family="monospace" font-size="9" fill="#8b949e">mIoU </text>
+  <text x="193" y="200" font-family="monospace" font-size="9" fill="#3fb950" font-weight="bold">78.02%</text>
+</g>
+<g opacity="0.9">
+  <rect x="252" y="186" width="100" height="22" rx="4" fill="#161b22" stroke="#30363d" stroke-width="0.5"/>
+  <text x="260" y="200" font-family="monospace" font-size="9" fill="#8b949e">mAP50-95 </text>
+  <text x="319" y="200" font-family="monospace" font-size="9" fill="#58a6ff" font-weight="bold">42→55</text>
+</g>
+
+<!-- Corner brackets -->
+<path d="M658 12 L668 12 L668 22" fill="none" stroke="#3fb950" stroke-width="1.5" opacity="0.6"/>
+<path d="M658 208 L668 208 L668 198" fill="none" stroke="#3fb950" stroke-width="1.5" opacity="0.6"/>
+<path d="M12 12 L2 12 L2 22" fill="none" stroke="#3fb950" stroke-width="1.5" opacity="0.6"/>
+<path d="M12 208 L2 208 L2 198" fill="none" stroke="#3fb950" stroke-width="1.5" opacity="0.6"/>
+
+<rect x="560" y="12" width="108" height="16" rx="3" fill="#1f3a25" stroke="#3fb950" stroke-width="0.5"/>
+<circle cx="568" cy="20" r="3" fill="#3fb950" style="animation: blink 1.5s ease-in-out infinite;"/>
+<text x="576" y="24" font-family="monospace" font-size="8" fill="#3fb950">DETECTION ACTIVE</text>
+<text x="560" y="210" font-family="monospace" font-size="8" fill="#8b949e">22 FPS  ·  YOLOv8m  ·  640×640</text>
+</svg>
