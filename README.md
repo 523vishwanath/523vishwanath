@@ -14,7 +14,7 @@
 
 ## 👋 About Me
 
-I'm a **Computer Vision Engineer** and MSIT candidate at **Florida State University** (GPA 3.9, graduating May 2026), focused on building real-world autonomous perception systems that actually ship.
+I'm a **Computer Vision Engineer** and MSIT candidate at **Florida State University** (GPA 3.85, graduated May 2026), focused on building real-world autonomous perception systems that actually ship.
 
 I design end-to-end deep learning pipelines across **detection, segmentation, and tracking** — and I care as much about the systems engineering as the model. On my BDD100K perception stack I took inference from ~3.3 FPS to ~14 FPS through pipeline-level optimization alone, with no change to the model. My work spans autonomous driving perception, medical imaging, aerial/UAV inspection, and deployed classification services with FastAPI + Cloud Run front ends.
 
