@@ -18,7 +18,7 @@ I'm a **Computer Vision Engineer** and MSIT candidate at **Florida State Univers
 
 I design end-to-end deep learning pipelines across **detection, segmentation, and tracking** — and I care as much about the systems engineering as the model. On my BDD100K perception stack I took inference from ~3.3 FPS to ~14 FPS through pipeline-level optimization alone, with no change to the model. My work spans autonomous driving perception, medical imaging, aerial/UAV inspection, and deployed classification services with FastAPI + Cloud Run front ends.
 
-Previously a Software Engineer at **HCLTech**, where I built scalable data pipelines in Python and SQL. I'm now focused on shipping fast, reliable CV systems — and **actively seeking roles in autonomous driving and perception.**
+Previously a Software Engineer at **HCLTech**, where I built scalable data pipelines in Python and SQL. I'm now focused on shipping fast, reliable CV systems — and **actively seeking roles in global health, medical imaging, robotics, defect inspections, autonomous driving and perception.**
 
 - 🔭 Building multi-task perception stacks with **YOLO, RF-DETR, SegFormer, DeepLabV3, Depth Anything V2**
 - ⚡ Optimizing inference with **TensorRT (FP16) and ONNX** for low-latency deployment
